@@ -26,7 +26,6 @@ export default function PlacesFormPage() {
     } else {
       axios.get("/places/" + id).then((response) => {
         const { data } = response;
-        console.log(data);
         setTitle(data.title);
         setAddress(data.address);
         setAddedPhotos(data?.photos);
@@ -45,7 +44,7 @@ export default function PlacesFormPage() {
     return <h2 className="tex-xl mt-4"> {text}</h2>;
   };
 
-  console.log(perks, "Logging perks");
+
   const inputDescription = (text) => {
     return <p className="text-gray-500 text-sm">{text}</p>;
   };

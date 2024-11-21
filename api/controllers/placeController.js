@@ -101,7 +101,6 @@ const updatePlace = async (req, res) => {
 };
 
 const getPlace = (async (req, res) => {
-  console.log("Request recieved from client")
   res.json(await Place.find());
 });
 

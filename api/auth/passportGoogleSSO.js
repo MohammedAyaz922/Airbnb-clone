@@ -63,7 +63,7 @@ passport.use(
   
 
 passport.serializeUser((user, cb) => {
-//   console.log("Serializing user:", user);
+
   cb(null, user.id);
 });
 
@@ -74,7 +74,6 @@ passport.deserializeUser(async (id, cb) => {
       
       // If user is found, pass it to the callback
       if (user) {
-        // console.log("DeSerialized user", user);
         cb(null, user);
       } else {
         cb(null, null); // If no user is found, return null

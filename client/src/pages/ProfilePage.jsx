@@ -26,7 +26,7 @@ const {pathname} = useLocation();
   if (subpage === subpage) {
     subpage = "profile";
   }
-  console.log(subpage, "Logging subpage from account page")
+
   
 
   if (ready && !user && !redirect) {
