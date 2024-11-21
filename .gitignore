@@ -15,7 +15,7 @@ yarn-error.log*
 .env
 .env.local
 
-# Ignore editor/project settings
+# Ignore editor project settings
 .vscode/
 .idea/
 *.iml
